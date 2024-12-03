@@ -6,5 +6,23 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Webauthn\\MetadataService\\' => array($vendorDir . '/web-auth/metadata-service/src'),
+    'Webauthn\\' => array($vendorDir . '/web-auth/webauthn-lib/src'),
+    'Symfony\\Polyfill\\Php81\\' => array($vendorDir . '/symfony/polyfill-php81'),
+    'Symfony\\Polyfill\\Php80\\' => array($vendorDir . '/symfony/polyfill-php80'),
+    'Symfony\\Component\\Process\\' => array($vendorDir . '/symfony/process'),
+    'Safe\\' => array($vendorDir . '/thecodingmachine/safe/lib', $vendorDir . '/thecodingmachine/safe/deprecated', $vendorDir . '/thecodingmachine/safe/generated'),
+    'Ramsey\\Uuid\\' => array($vendorDir . '/ramsey/uuid/src'),
+    'Ramsey\\Collection\\' => array($vendorDir . '/ramsey/collection/src'),
+    'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
+    'Psr\\Http\\Message\\' => array($vendorDir . '/psr/http-message/src', $vendorDir . '/psr/http-factory/src'),
+    'Psr\\Http\\Client\\' => array($vendorDir . '/psr/http-client/src'),
     'PHPMailer\\PHPMailer\\' => array($vendorDir . '/phpmailer/phpmailer/src'),
+    'League\\Uri\\' => array($vendorDir . '/league/uri-interfaces/src', $vendorDir . '/league/uri/src'),
+    'FG\\' => array($vendorDir . '/fgrosse/phpasn1/lib'),
+    'Cose\\' => array($vendorDir . '/web-auth/cose-lib/src'),
+    'CBOR\\' => array($vendorDir . '/spomky-labs/cbor-php/src'),
+    'Brick\\Math\\' => array($vendorDir . '/brick/math/src'),
+    'Base64Url\\' => array($vendorDir . '/spomky-labs/base64url/src'),
+    'Assert\\' => array($vendorDir . '/beberlei/assert/lib/Assert'),
 );

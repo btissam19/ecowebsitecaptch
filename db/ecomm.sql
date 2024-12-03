@@ -187,6 +187,11 @@ INSERT INTO `users` (`id`, `email`, `password`, `type`, `firstname`, `lastname`,
 (9, 'ndevierte@gmail.com', '$2y$10$V9QYhuCerNIIprq7WTPkqOTOid83VghciRlCHT.rBxbUHJGtmfHjC', 0, 'Neovic', 'Devierte', 'Silay City, Negros Occidental', '09092735719', 'facebook-profile-image.jpeg', 1, 'k8FBpynQfqsv', 'wzPGkX5IODlTYHg', '2018-05-09'),
 (11, 'test@gmail.com', '$2y$10$dvV7onY2bPSb9GBENwR57OixbBy3veerLtRt/FqnpoeyzV1h8x48K', 0, 'test', 'test', 'test', 'test', '', 1, '', '', '2018-05-11');
 
+ALTER TABLE users 
+ADD COLUMN biometric_credential_id VARCHAR(255) NULL,
+ADD COLUMN biometric_public_key TEXT NULL,
+ADD COLUMN biometric_registration_date TIMESTAMP NULL;
+
 --
 -- Indexes for dumped tables
 --
